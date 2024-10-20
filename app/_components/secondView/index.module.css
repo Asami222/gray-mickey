@@ -1,0 +1,35 @@
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main p {
+    background-color: var(--gray-bright);
+}
+
+.section {
+    width: 100%;
+    margin-top: -1px;
+}
+
+

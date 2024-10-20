@@ -1,0 +1,27 @@
+.wrapper {
+    color: var(--gray-black);
+    padding: 16px 0;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.wrapper nav {
+    margin-bottom: 24px;
+}
+
+.wrapper ul {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    font-size: 16px;
+}
+
+.cr {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .wrapper ul {
+        gap: 35px;
+    }
+}

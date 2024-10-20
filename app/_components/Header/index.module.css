@@ -1,0 +1,27 @@
+.wrapper {
+    padding: clamp(1.25rem, -0.625rem + 3.91vw, 2.5rem) clamp(1.563rem, -1.719rem + 6.84vw, 3.75rem) 0; /*上:15-40px ,左右:20-60px*/
+    height: 224px;
+    background-color: var(--gray-bright);
+}
+
+.logo h1 {
+    display: inline-block;
+    font-size: clamp(1.5rem, 3.13vw, 2.5rem); /* 24-40px */
+    transform: rotate(-10deg);
+}
+
+.img {
+    display: inline-block;
+    right: 0;
+    width: 49px;
+    padding-left: 15px;
+    transform: rotate(10deg);
+}
+
+@media (max-width: 768px) {
+    .img {
+        width: 40px;
+        padding-left: 10px;
+    }
+    
+}

@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+//import { Inter } from "next/font/google";
 import 'destyle.css';
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+//const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000"),
@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

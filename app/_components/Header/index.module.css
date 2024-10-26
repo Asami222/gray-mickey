@@ -1,27 +1,217 @@
-.wrapper {
-    padding: clamp(1.25rem, -0.625rem + 3.91vw, 2.5rem) clamp(1.563rem, -1.719rem + 6.84vw, 3.75rem) 0; /*上:15-40px ,左右:20-60px*/
-    height: 224px;
+.header {
     background-color: var(--gray-bright);
+    
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: clamp(1.563rem, 0.915rem + 2.76vw, 3.125rem) 0 0; /*上:25-50px ,左右:20-60px*/
+    height: 224px;
 }
 
 .logo h1 {
     display: inline-block;
-    font-size: clamp(1.5rem, 3.13vw, 2.5rem); /* 24-40px */
+    font-size: clamp(1.125rem, 0.555rem + 2.43vw, 2.5rem); /* 18-40px */
     transform: rotate(-10deg);
 }
 
-.img {
+.logo h1 .img {
     display: inline-block;
     right: 0;
-    width: 49px;
+    width: clamp(1.25rem, 0.499rem + 3.2vw, 3.063rem);/*20-49px*/
     padding-left: 15px;
     transform: rotate(10deg);
 }
 
+.wrapper ul {
+    display: flex;
+    gap: clamp(1.25rem, 0.991rem + 1.1vw, 1.875rem);/*20-30px*/
+    align-items: end;/*個別の高さにする設定*/
+    
+}
+
+.wrapper nav {
+    position: relative;
+    align-self: flex-end;
+    z-index: 0;
+}
+
+.wrapper ul li {
+    font-size: clamp(0.875rem, 0.72rem + 0.66vw, 1.25rem); /*14-20px*/
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--white);
+    background-color: var(--black);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.menu {
+    position: relative;
+    letter-spacing: 0.1em;
+    padding: clamp(2.188rem, 1.799rem + 1.66vw, 3.125rem) clamp(0.938rem, 0.808rem + 0.55vw, 1.25rem) clamp(0.625rem, 0.366rem + 1.1vw, 1.25rem);
+}
+
+.menu::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url("/home/smoke3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: clamp(2.75rem, 2.18rem + 2.43vw, 4.125rem);
+    height: clamp(2.875rem, 2.305rem + 2.43vw, 4.25rem);
+    top: 10px;
+    left: 20px;
+    z-index: -1;
+    animation: 8s ease 1s infinite normal backwards running flow;
+    /*
+    animation-name: flow;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+    */
+}
+
+.wrapper ul li.game {
+    position: relative;
+    font-weight: bold;
+    font-size: clamp(0.813rem, 0.683rem + 0.55vw, 1.125rem);
+    padding: clamp(3.438rem, 3.049rem + 1.66vw, 4.375rem) clamp(0.813rem, 0.372rem + 1.88vw, 1.875rem) clamp(0.625rem, 0.366rem + 1.1vw, 1.25rem);
+}
+
+.wrapper ul li.game::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url("/home/smoke2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: clamp(4.688rem, 3.911rem + 3.31vw, 6.563rem);
+    height: clamp(4.063rem, 3.363rem + 2.98vw, 5.75rem);
+    top: 10px;
+    left: 20px;
+    z-index: -1;
+    animation: 8s ease 1s infinite normal backwards running flow2;
+}
+
+.about {
+    position: relative;
+    letter-spacing: 0.1em;
+    padding: clamp(0.75rem, 0.491rem + 1.1vw, 1.375rem) clamp(1.125rem, 0.944rem + 0.77vw, 1.563rem) clamp(0.625rem, 0.366rem + 1.1vw, 1.25rem);
+}
+
+.about::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url("/home/smoke1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: clamp(2rem, 1.534rem + 1.99vw, 3.125rem);
+    height: clamp(2.188rem, 1.67rem + 2.21vw, 3.438rem);
+    top: 10px;
+    left: 30px;
+    z-index: -1;
+    animation: 8s ease 1s infinite normal backwards running flow;
+}
+
+@keyframes flow {
+
+    33% {
+      top: 10px;
+      opacity: 1;
+    }
+  
+    66% {
+      opacity: 0.8;
+    }
+
+    100% {
+      top: -150px;
+      transform: rotate(-230deg);
+      opacity: 0;
+    }
+}
+
+@keyframes flow2 {
+
+    33% {
+      top: 10px;
+      opacity: 1;
+    }
+  
+    66% {
+      opacity: 0.8;
+    }
+
+    100% {
+      top: -150px;
+      transform: rotate(230deg);
+      opacity: 0;
+    }
+}
+
 @media (max-width: 768px) {
-    .img {
-        width: 40px;
-        padding-left: 10px;
+
+    .header {
+        width: 100%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        height: 184px;
+    }
+
+    .wrapper nav {
+        align-self: flex-end;
+        margin: 0 auto;
+    }
+
+    .logo h1 .img {
+        padding-left: 5px;
+    }
+
+    @keyframes flow {
+
+        33% {
+          top: 10px;
+          opacity: 1;
+        }
+      
+        66% {
+          opacity: 0.8;
+        }
+    
+        100% {
+          top: -120px;
+          transform: rotate(-230deg);
+          opacity: 0;
+        }
+    }
+    
+    @keyframes flow2 {
+    
+        33% {
+          top: 10px;
+          opacity: 1;
+        }
+      
+        66% {
+          opacity: 0.8;
+        }
+    
+        100% {
+          top: -120px;
+          transform: rotate(230deg);
+          opacity: 0;
+        }
     }
     
 }

@@ -1,0 +1,12 @@
+.button {
+    display: inline-block;
+    font-size: clamp(1.25rem, 0.732rem + 2.21vw, 2.5rem);
+    line-height: 1;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.about {
+    padding: clamp(1.125rem, 0.426rem + 2.98vw, 2.813rem) clamp(2.125rem, 1.244rem + 3.76vw, 4.25rem);/*上下18-45px,左右34-68px*/
+    background-color: var(--gray-bright);
+}

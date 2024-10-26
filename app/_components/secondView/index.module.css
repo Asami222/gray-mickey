@@ -23,13 +23,30 @@
     
 }
 
-.main p {
-    background-color: var(--gray-bright);
-}
-
 .section {
     width: 100%;
     margin-top: -1px;
 }
+
+.contact {
+    background-color: var(--gray-bright);
+    padding: 2.5em 0 1em;
+}
+
+.mickey {
+    margin-bottom: 45px;
+}
+
+.mickey div{
+    width: clamp(6.375rem, 5.028rem + 5.75vw, 9.625rem);/*102-154px*/
+    margin: 0 auto 1em;
+}
+
+.mickey p {
+    font-size: clamp(0.938rem, 0.808rem + 0.55vw, 1.25rem);/*14-20px*/
+    text-align: center;
+    line-height: 1.8;
+}
+
 
 

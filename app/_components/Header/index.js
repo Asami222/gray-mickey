@@ -36,7 +36,7 @@ export default function Header() {
                         <Link href="/menu">MENU</Link>
                     </li>
                     <li className={styles.game}>
-                        <Link href="/game">キャラクター<br/>診断ゲーム</Link>
+                        <Link href="/game">キャラクター<br/>診断クイズ</Link>
                     </li>
                     <li className={styles.about}>
                         <Link href="/about">ABOUT</Link>

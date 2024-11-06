@@ -9,6 +9,10 @@
     border-right: 6px solid var(--gray-dark); 
 }
 
+.text {
+    white-space: pre-wrap;
+}
+
 .piece .text {
     font-size: clamp(0.938rem, 0.808rem + 0.55vw, 1.25rem);
     width: 86%;

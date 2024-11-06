@@ -12,7 +12,7 @@ export default function NotFound() {
             <div className={styles.top}>
                 <div className={styles.img}>
                     <Image
-                        src="/pans.svg"
+                        src="game/pans.svg"
                         alt=""
                         width={240}
                         height={130}
@@ -24,7 +24,7 @@ export default function NotFound() {
                 </dl>
                 <div className={cx(styles.img, styles.pan2)}>
                     <Image
-                        src="/pans.svg"
+                        src="game/pans.svg"
                         alt=""
                         width={240}
                         height={130}
@@ -33,7 +33,7 @@ export default function NotFound() {
             </div>
             <div className={styles.cat}>
                 <Image
-                    src="/cat.svg"
+                    src="game/cat.svg"
                     alt=""
                     width={143}
                     height={144}

@@ -9,7 +9,9 @@
 
   /* Typography */
   --body: clamp(1rem, 0.954rem + 0.2vw, 1.125rem); /* 16-20px */
+  --smallhead: clamp(0.938rem, 0.704rem + 0.99vw, 1.5rem); /* 15-24px */
   --heading: clamp(1.25rem, 1.159rem + 0.39vw, 1.5rem); /* 20-24px */
+  --article: clamp(0.875rem, 0.823rem + 0.22vw, 1rem); /* 14-16px */
   
   /* Border */
   --border-radius: 50px;

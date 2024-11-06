@@ -14,7 +14,7 @@ export default function About() {
         <div className={styles.wrapper}>
             <Container>
             <div className={styles.topFlex}>
-                <ButtonAbout />
+                    <ButtonAbout />
                 <main className={styles.main}>
                     <div className={styles.titleFlex}>
                         <div className={styles.title}>

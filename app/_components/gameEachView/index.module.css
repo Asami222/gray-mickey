@@ -1,0 +1,122 @@
+.question {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.button2 {
+    position: relative;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 5px 15px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.button2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform: skew(-25deg);
+}
+.button2:hover::before {
+    animation: shine 0.7s;
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+.title {
+    font-size: 1.2em;
+}
+.quests > p {
+    line-height: 2;
+}
+.box label {
+    font-size: 1.1em;
+}
+/*
+.number {
+    align-self: start;
+}
+*/
+.quest {
+    align-self: flex-end;
+    justify-self: center;
+}
+.quest1,
+.quest5 {
+    align-self: center;
+}
+.quest7 img{
+    width: 90%;
+}
+.quest8 {
+    align-self: flex-start;
+}
+.quiz input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    vertical-align: -2px;
+    margin-right: 20px;
+}
+.quiz input[type="radio"]:checked::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--black);
+    content: "";
+}
+.bottom {
+    text-align: center;
+}
+.actions {
+    margin-bottom: 1em;
+}
+.questMobile {
+    display: none;
+}
+@media (max-width: 630px) {
+    .question {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    .quest {
+        display: none;
+    }
+    .box {
+        height: 500px;
+    }
+    .questMobile {
+        display: block;
+        justify-self: center;
+        align-self: center;
+        width: 70%;
+        height: 250px;
+        text-align: center;
+    }  
+}

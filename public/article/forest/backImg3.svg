@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 222">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ccdbc0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M.18,71.9C83.2,14.54,198.31-29.32,309,24.24,202.44,2.51,89.32,30.06,11.19,145.93c56.55-49.35,139.51-90.75,224.73-49.69C151.82,80.31,69.89,105.57,0,222L.18,71.9Z"/>
+</svg>

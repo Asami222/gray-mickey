@@ -6,7 +6,39 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.article {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    width: clamp(7.5rem, 4.392rem + 13.26vw, 15rem);/*120-240px*/
+    height: clamp(3.375rem, -2.996rem + 27.18vw, 18.75rem);/*54-300px*/
+    background-color: var(--color, #EDF0F2);
+    transition: background-color 0.5s;
+}
+
+/*
+.hover {
+    background-color: var(--black);
+}
+*/
+.img {
+    width: clamp(2.5rem, 1.723rem + 3.31vw, 4.375rem);/*40-70px*/
+}
+
 .about {
     padding: clamp(1.125rem, 0.426rem + 2.98vw, 2.813rem) clamp(2.125rem, 1.244rem + 3.76vw, 4.25rem);/*上下18-45px,左右34-68px*/
     background-color: var(--gray-bright);
+}
+
+@media (max-width: 768px) {
+
+    .article {
+        height: clamp(3.375rem, 1.824rem + 6.62vw, 5rem);
+    }
+
+    .article .img {
+        display: none;
+    }
 }

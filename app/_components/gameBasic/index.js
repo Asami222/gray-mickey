@@ -1,14 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import GameEachView from "../gameEachView";
-import GameResultView from "../gameResultView";
+import StartView from "../gameStartView";
+import EachView from "../gameEachView";
+import ResultView from "../gameResultView";
 import data from '@/app/_components/dataGame';
 import styles from "./index.module.css"
 
 export default function GameBasic() {
 
     const info = data.quiz
+
+    const [isStart, setStart] = useState(true)
     
     const [results, setResults] = useState([])
 
@@ -18,6 +21,10 @@ export default function GameBasic() {
 
     const handleSelectChange = (newValue) => {
         setSelectedOption(newValue)
+    }
+
+    const start = () => {
+        setStart(false)
     }
 
     const update = () => {
@@ -45,12 +52,19 @@ export default function GameBasic() {
     const reset = () => {
         setResults([])
         setNum(0)
+        setStart(true)
     }
 
     return (
         <>
-            {num < 10 && <GameEachView {...info[num]} onUpdate={update} handleSelectChange={handleSelectChange} selectedOption={selectedOption}/>}
-            {num === 10 && <GameResultView results={results} onReset={reset}/>}
+            {isStart && <StartView onStart={start}/>}
+            {isStart ||
+                (num < 10 ? 
+                <EachView {...info[num]} onUpdate={update} handleSelectChange={handleSelectChange} selectedOption={selectedOption}/>
+                : 
+                <ResultView results={results} onReset={reset}/>
+                )
+            }
         </>
     )
 }

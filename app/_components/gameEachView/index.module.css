@@ -17,7 +17,7 @@
     position: relative;
     display: inline-block;
     background: #333;
-    color: #fff;
+    color: var(--white);
     padding: 5px 15px;
     overflow: hidden;
     border-radius: 10px;

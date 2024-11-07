@@ -1,7 +1,6 @@
 //import { Inter } from "next/font/google";
 import 'destyle.css';
 import "./globals.css";
-
 //const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,6 +13,7 @@ export const metadata = {
   openGraph: {
     title: "Gray Mickey",
     description: "世の中の社会問題や理不尽なことに対しての情報提供や疑問を投げかけるサイトです。",
+    images: ["/ogp.png"],
   }
 };
 

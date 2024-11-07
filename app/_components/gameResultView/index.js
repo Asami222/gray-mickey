@@ -2,7 +2,7 @@ import Image from "next/image";
 import data from '@/app/_components/dataGame';
 import styles from "./index.module.css"
 
-export default function GameResultView({results,onReset}) {
+export default function ResultView({results,onReset}) {
 
     let mickey = 0; 
     let minnie = 0;

@@ -5,7 +5,7 @@ import cx from "classnames";
 import styles from "./index.module.css"
 
 
-export default function GameEachView({id,question,choices,imgLeft,imgRight,imgMobile,onUpdate,handleSelectChange,selectedOption}) {
+export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile,onUpdate,handleSelectChange,selectedOption}) {
     
     const handleClick = () => onUpdate();
     

@@ -54,13 +54,13 @@
 .text > * + * {
     margin-top: 1em;
 }
-
+/*
 .text a {
     display: inline-block;
     margin-top: 2em;
     text-decoration: underline;
 }
-
+*/
 @media (max-width: 768px) {
     .topFlex {
         flex-direction: column;

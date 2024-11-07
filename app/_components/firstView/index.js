@@ -2,7 +2,9 @@ import cx from "classnames";
 import Image from "next/image";
 import styles from "./index.module.css"
 
-export default function FirstView({count}) {
+export default function FirstView({count,Go}) {
+
+    const handleClick = () => Go();
 
     return (
         <main className={cx(styles.position, count === 0 ? styles.fadeOut : '')}>
@@ -23,6 +25,7 @@ export default function FirstView({count}) {
                     />
                 </div>
                 <p>あと<span>{count}</span>秒でスタートします</p>
+                <button className={styles.button} onClick={handleClick}><span>START</span></button>
             </div>
         </main>
     )

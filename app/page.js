@@ -7,12 +7,16 @@ import styles from "./page.module.css";
 
 export default function Home() {
 
-  const[count, setcount] = useState(5);
+  const[count, setCount] = useState(5);
+
+  const go = () => {
+    setCount(0)
+  }
 
     useEffect(() => {
         const t = setInterval(() => {
             
-            setcount(c => c > 0 ? c - 1 : 0);
+            setCount(c => c > 0 ? c - 1 : 0);
             
         },1000);
 
@@ -23,8 +27,9 @@ export default function Home() {
 
   return (
       <>
-      
-        <SecondView count={count} />
+
+        { count > 0 && <FirstView count={count} Go={go}/>}
+        { count === 0 && <SecondView count={count} />}
       </>
   )
 }

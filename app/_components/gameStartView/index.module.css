@@ -1,11 +1,5 @@
 .Box {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.firstBox {
-    width: 60%;
+    width: 95%;
     height: 100%;
     text-align: center;
     display: flex;
@@ -22,10 +16,12 @@
 }
 .introflex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10%;
 }
 .introflexSec {
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10%;
 }
 .introflex > div {
     text-align: center;
@@ -37,7 +33,7 @@
     display: inline-block;
     background: transparent;
     border-radius: 10px;
-    border: 1px solid var(--font-color,#000);
+    border: 1px solid var(--font-color,#18110D);
     transition: all 0.2s ease;
     margin-bottom: 0.5em;
 }
@@ -51,7 +47,7 @@
     padding: 10px 15px;
     background: #fff;
     border-radius: 10px;
-    color: var(--font-color,#000);
+    color: var(--font-color,#18110D);
     transition: all 0.3s ease;
 }
 .pushright::before {
@@ -67,6 +63,35 @@
 }
 .pushright:hover span {
     background-color: #333;
-    color: #fff;
+    color: var(--white);
     transform: translate(4px, 4px);
+}
+@media (max-width: 630px) {
+    .Box {
+        width: 95%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 3em;
+        gap: 7%;
+    }
+    .introbox {
+        margin-top: 1em;
+    }
+    .introbox .img {
+        width: clamp(6.25rem, 1.654rem + 19.61vw, 9.375rem);
+    }
+    .introflex {
+        gap: 5%;
+    }
+    .introflexSec {
+        gap: 5%;
+        margin-top: 2em;
+    }
+    .title {
+        width: 75%;
+    }
 }

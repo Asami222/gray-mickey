@@ -14,7 +14,7 @@ export default function SecondView({count}) {
             <LayoutBasic>
                 <div className={styles.main}>
                     <SlideShow />
-                    <div className={styles.contact}>
+                    <div id="contact" className={styles.contact}>
                         <Container>
                             <div className={styles.mickey}>
                                 <div >

@@ -2,9 +2,12 @@ import Image from "next/image";
 import cx from "classnames";
 import styles from "./index.module.css"
 
-export default function StartView() {
+export default function StartView({onStart}) {
+
+    const handleClick = () => onStart();
+
     return (
-        <div className={cx(styles.Box,styles.firstBox)}>
+        <div className={styles.Box}>
             <p className={styles.title}>あなたはこの５種類のキャラクターの内どれにいちばん近い？</p>
             <div className={styles.introbox}>
                 <div className={styles.introflex}>
@@ -78,7 +81,7 @@ export default function StartView() {
                 </div>
             </div>
             <div>
-                <button className={cx(styles.button, styles.pushright)}><span>診断スタート！</span></button>
+                <button className={cx(styles.button, styles.pushright)} onClick={handleClick}><span>診断スタート！</span></button>
                 <p>10問あるよ!</p>
             </div>
         </div>

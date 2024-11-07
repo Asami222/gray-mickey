@@ -15,12 +15,12 @@ export default function StartView({onStart}) {
                         <p>ミッキー</p>
                         <div className={styles.img}>
                             <Image
-                                src="/game/quiz-mickey.png"
+                                src="/game/mickey.png"
                                 alt="ミッキーマウス"
-                                layout="responsive"
                                 sizes="(min-width: 150px) 150px, 13vw"
                                 width={316}
                                 height={316}
+                                priority
                             />
                         </div>
                     </div>
@@ -28,9 +28,8 @@ export default function StartView({onStart}) {
                         <p>ミニー</p>
                         <div className={styles.img}>
                             <Image
-                                src="/game/quiz-miny.png"
+                                src="/game/minnie.png"
                                 alt="ミニーマウス"
-                                layout="responsive"
                                 sizes="(min-width: 150px) 150px, 13vw"
                                 width={316}
                                 height={316}
@@ -41,9 +40,8 @@ export default function StartView({onStart}) {
                         <p>ピート</p>
                         <div className={styles.img}>
                             <Image
-                                src="/game/quiz-pete.png"
+                                src="/game/pete.png"
                                 alt="ピート"
-                                layout="responsive"
                                 sizes="(min-width: 150px) 150px, 13vw"
                                 width={316}
                                 height={316}
@@ -56,9 +54,8 @@ export default function StartView({onStart}) {
                         <p>オウム</p>
                         <div className={styles.img}>
                             <Image
-                                src="/game/quiz-oumu.png"
+                                src="/game/oumu.png"
                                 alt="ピート"
-                                layout="responsive"
                                 sizes="(min-width: 150px) 150px, 13vw"
                                 width={316}
                                 height={316}
@@ -69,9 +66,8 @@ export default function StartView({onStart}) {
                         <p>山羊</p>
                         <div className={styles.img}>
                             <Image
-                                src="/game/quiz-hituji.png"
+                                src="/game/goat.png"
                                 alt="ピート"
-                                layout="responsive"
                                 sizes="(min-width: 150px) 150px, 13vw"
                                 width={316}
                                 height={316}

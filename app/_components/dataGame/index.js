@@ -89,17 +89,17 @@ const data = {
             imgLeft: {
                 url: "ukiwa",
                 width: 225,
-                height: 390,
+                height: 391,
             },
             imgRight: {
                 url: "ukiwa",
                 width: 225,
-                height: 390,
+                height: 391,
             },
             imgMobile: {
-                url: "ukiwa",
+                url: "ukiwaMobile",
                 width: 225,
-                height: 390,
+                height: 245,
             },
         },
         {

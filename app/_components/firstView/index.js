@@ -18,7 +18,6 @@ export default function FirstView({count,Go}) {
                     <Image
                     src="/mickey1.gif"
                     alt="Welcome To Gray Mickey Site !"
-                    layout="responsive"
                     sizes="(max-width: 375px) 252px, 380px"
                     width={1233}
                     height={1237}

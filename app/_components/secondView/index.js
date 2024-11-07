@@ -34,7 +34,6 @@ export default function SecondView({count}) {
                         <Image
                         src="/home/sectionImg.svg"
                         alt=""
-                        layout="responsive"
                         sizes="100vw"
                         width={1280}
                         height={130}

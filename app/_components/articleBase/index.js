@@ -16,8 +16,8 @@ export default function ArticleBase({children,id,link,arrow,top,color = 'initial
                                 <Image
                                     src="/article/fashion/main.webp"
                                     alt=""
-                                    layout="fill"
-                                    objectFit="cover"
+                                    fill
+                                    style={{objectFit: 'cover'}}
                                 />
                             </div>
                         </div>
@@ -62,8 +62,9 @@ export default function ArticleBase({children,id,link,arrow,top,color = 'initial
                                 <Image
                                     src="/article/poverty/mainImg.webp"
                                     alt="貧困"
-                                    layout="fill"
-                                    objectFit="cover"
+                                    fill
+                                    sizes="(min-width: 576px) 576px, 100vw"
+                                    style={{objectFit: 'cover'}}
                                 />
                             </div>
                         </div>

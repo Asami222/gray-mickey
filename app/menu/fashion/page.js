@@ -54,8 +54,9 @@ export default function Fashion() {
                         <Image
                             src="/article/fashion/garbage.webp"
                             alt="ごみの山"
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            sizes="(min-width: 272px) 272px, 50vw"
+                            style={{objectFit: 'cover'}}
                         />
                     </div>
                     </div>
@@ -93,10 +94,13 @@ export default function Fashion() {
                     <Image
                         src="/article/fashion/bottomImg.webp"
                         alt="ファッションブランドショップ"
-                        layout="responsive"
                         sizes="(min-width: 576px) 576px, 50vw"
                         width={1152}
                         height={800}
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                        }}  
                     />
                 </div>
             </section>

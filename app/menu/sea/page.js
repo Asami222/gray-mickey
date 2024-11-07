@@ -43,7 +43,6 @@ export default function Sea() {
                     <Image
                         src="/article/sea/turtle.webp"
                         alt="海亀"
-                        layout="responsive"
                         sizes="(min-width: 624px) 624px, 50vw"
                         width={1248}
                         height={876}
@@ -53,7 +52,6 @@ export default function Sea() {
                     <Image
                         src="/article/sea/garbage3.png"
                         alt="買い物袋のゴミ"
-                        layout="responsive"
                         sizes="(min-width: 210px) 210px, 30vw"
                         width={420}
                         height={538}
@@ -84,7 +82,6 @@ export default function Sea() {
                     <Image
                         src="/article/sea/garbage3.png"
                         alt="買い物袋のゴミ"
-                        layout="responsive"
                         sizes="(min-width: 210px) 210px, 30vw"
                         width={420}
                         height={538}
@@ -135,7 +132,6 @@ export default function Sea() {
                     <Image
                         src="/article/sea/sea.webp"
                         alt="海の中"
-                        layout="responsive"
                         sizes="(min-width: 572px) 572px, 90vw"
                         width={1144}
                         height={800}

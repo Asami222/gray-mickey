@@ -45,7 +45,6 @@ export default function Poverty() {
                             <Image
                                 src="/article/poverty/child.webp"
                                 alt="笑顔の子供達"
-                                layout="responsive"
                                 sizes="(min-width: 624px) 624px, 50vw"
                                 width={1248}
                                 height={1152}

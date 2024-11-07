@@ -21,8 +21,10 @@ export default function Forest() {
                             <Image
                                 src="/article/forest/mainImg.webp"
                                 alt="森林破壊"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                style={{objectFit: 'cover'}}
+                                sizes="(min-width: 320px) 320px, 40vw"
+                                priority
                             />
                         </div>
                     </div>
@@ -60,8 +62,9 @@ export default function Forest() {
                             <Image
                                 src="/article/forest/middle.webp"
                                 alt="オラウータン"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                style={{objectFit: 'cover'}}
+                                sizes="(min-width: 576px) 576px, 50vw"
                             />
                         </div>
                     </div>

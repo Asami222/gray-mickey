@@ -8,7 +8,7 @@ export default function Icon({title,img,width,height,name}) {
 
     return (
         <div className={cx(styles.container,styles[`${name}`])}>
-            <Link href={`/menu/${name}`} className={name === 'sea' && styles.turtle}>
+            <Link href={`/menu/${name}`}>
                 <Image
                     src={img}
                     alt={title}

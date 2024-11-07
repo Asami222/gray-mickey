@@ -18,7 +18,6 @@ export default function Land() {
                         <Image
                             src="/article/land/bear.webp"
                             alt="北極熊"
-                            layout="responsive"
                             sizes="(min-width: 624px) 624px, 50vw"
                             width={1248}
                             height={1100}
@@ -64,7 +63,6 @@ export default function Land() {
                             <Image
                                 src="/article/land/bear2.webp"
                                 alt="北極熊"
-                                layout="responsive"
                                 sizes="(min-width: 576px) 576px, 100vw"
                                 width={1152}
                                 height={400}
@@ -77,7 +75,6 @@ export default function Land() {
                     <Image
                         src="/article/land/glacier.webp"
                         alt="氷河"
-                        layout="responsive"
                         sizes="(min-width: 576px) 576px, 50vw"
                         width={1152}
                         height={800}

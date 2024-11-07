@@ -21,7 +21,6 @@ export default function Header() {
                             <Image
                                 src="/logoAfter.svg"
                                 alt=""
-                                layout="responsive"
                                 sizes="(min-width: 1280px) 49px, 100vw"
                                 width={49}
                                 height={42}

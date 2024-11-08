@@ -39,6 +39,7 @@ export default function ResultView({results,onReset}) {
                     alt=""
                     width={350}
                     height={350}
+                    priority
                 />
             </div>
             <div className={styles.contents}>

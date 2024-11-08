@@ -46,6 +46,7 @@ export default function Sea() {
                         sizes="(min-width: 624px) 624px, 50vw"
                         width={1248}
                         height={876}
+                        priority
                     />
                 </div>
                 <div className={styles.garbage3}>

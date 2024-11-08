@@ -21,6 +21,8 @@ export default function Land() {
                             sizes="(min-width: 624px) 624px, 50vw"
                             width={1248}
                             height={1100}
+                            placeholder="blur"
+                            priority
                         />
                     </div>
                     <div className={styles.text}>

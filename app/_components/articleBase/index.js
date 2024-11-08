@@ -18,6 +18,7 @@ export default function ArticleBase({children,id,link,arrow,top,color = 'initial
                                     alt=""
                                     fill
                                     style={{objectFit: 'cover'}}
+                                    priority
                                 />
                             </div>
                         </div>
@@ -65,6 +66,7 @@ export default function ArticleBase({children,id,link,arrow,top,color = 'initial
                                     fill
                                     sizes="(min-width: 576px) 576px, 100vw"
                                     style={{objectFit: 'cover'}}
+                                    priority
                                 />
                             </div>
                         </div>

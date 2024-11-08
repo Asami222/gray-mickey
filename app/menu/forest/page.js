@@ -65,6 +65,7 @@ export default function Forest() {
                                 fill
                                 style={{objectFit: 'cover'}}
                                 sizes="(min-width: 576px) 576px, 50vw"
+                                placeholder="blur"
                             />
                         </div>
                     </div>

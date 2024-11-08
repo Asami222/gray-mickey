@@ -26,6 +26,7 @@ export default function About() {
                                 alt="ミッキーマウス"
                                 width={187}
                                 height={305}
+                                priority
                             />
                         </div>
                     </div>

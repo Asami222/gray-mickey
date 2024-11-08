@@ -35,11 +35,13 @@ export default function ResultView({results,onReset}) {
         <div className={styles.results}>
             <div>
                 <Image
-                    src={`/game/${img}.svg`}
+                    src={`/game/${img}.jpg`}
                     alt=""
-                    width={350}
-                    height={350}
+                    width={700}
+                    height={700}
+                    sizes="(max-width: 630px) 70vw, 30vw"
                     priority
+                    style={{width: '100%',height: 'auto'}}
                 />
             </div>
             <div className={styles.contents}>

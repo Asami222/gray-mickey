@@ -15,7 +15,7 @@ export const BlurImage1 = ({src,alt,width,height}) => {
         width={width}
         height={height}
         className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-        onLoad={() => setIsImageLoaded(true)}
+        onLoadingComplete={() => setIsImageLoaded(true)}
       />
     </>
   );
@@ -33,7 +33,7 @@ export const BlurImage2 = ({src,alt,width,height,sizes}) => {
           height={height}
           sizes={sizes}
           className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-          onLoad={() => setIsImageLoaded(true)}
+          onLoadingComplete={() => setIsImageLoaded(true)}
           priority
         />
       </>
@@ -52,7 +52,7 @@ export const BlurImage2 = ({src,alt,width,height,sizes}) => {
           sizes={sizes}
           style={{objectFit: 'cover'}}
           className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-          onLoad={() => setIsImageLoaded(true)}
+          onLoadingComplete={() => setIsImageLoaded(true)}
           priority
         />
       </>
@@ -71,7 +71,7 @@ export const BlurImage4 = ({src,alt,sizes}) => {
           sizes={sizes}
           style={{objectFit: 'cover'}}
           className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-          onLoad={() => setIsImageLoaded(true)}
+          onLoadingComplete={() => setIsImageLoaded(true)}
         />
       </>
     );

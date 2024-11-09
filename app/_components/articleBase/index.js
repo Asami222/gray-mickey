@@ -4,7 +4,7 @@ import ArrowArticle from "@/app/_components/arrowArticle";
 import Footer from "../Footer";
 import cx from "classnames";
 import styles from "./index.module.css"
-import { BlurImage3 } from "../blurImage";
+import { BlurImage1, BlurImage3 } from "../blurImage";
 
 export default function ArticleBase({children,id,link,arrow,top,color = 'initial'}) {
  
@@ -43,12 +43,7 @@ export default function ArticleBase({children,id,link,arrow,top,color = 'initial
                     </div>
                     { id === 'land' &&
                         <div className={styles.ice}>
-                        <Image 
-                            src="/article/land/ice.png"
-                            alt=""
-                            width={546}
-                            height={324}
-                        />
+                            <BlurImage1 src="/article/land/ice.png" alt="" width="546" height="324" sizes="(min-width: 546px) 546px, 50vw"/>
                         </div>
                     }
                     { id === 'poverty' &&

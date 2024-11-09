@@ -4,8 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import styles from "./index.module.css"
 
-
-export const BlurImage = ({src,alt,width,height}) => {
+export const BlurImage1 = ({src,alt,width,height}) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   return (

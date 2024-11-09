@@ -4,6 +4,7 @@ import { Nothing_You_Could_Do } from "next/font/google";
 import { ButtonAbout } from "../_components/Button";
 import Footer from "../_components/Footer";
 import Container from "../_components/container";
+import { BlurImage1 } from "../_components/blurImage";
 import styles from "./page.module.css"
 
 const logo = Nothing_You_Could_Do({ subsets: ["latin"], weight: ["400"] });
@@ -21,14 +22,7 @@ export default function About() {
                             <h1 className={logo.className}>About<br /><span>Gray Mickey</span></h1>
                         </div>
                         <div className={styles.img}>
-                            <Image
-                                src="/about/mickey.png"
-                                alt="ミッキーマウス"
-                                width={187}
-                                height={305}
-                                loading="eager"
-                                priority
-                            />
+                            <BlurImage1 src="/about/mickey.png" alt="ミッキーマウス" width="187" height="305"/>
                         </div>
                     </div>
                     <div className={styles.text}>
@@ -41,7 +35,6 @@ export default function About() {
             </div>
             </Container>
             <Footer />
-        </div>
-        
+        </div> 
     )
 }

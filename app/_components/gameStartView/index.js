@@ -1,6 +1,7 @@
-import Image from "next/image";
+
 import cx from "classnames";
 import styles from "./index.module.css"
+import { BlurImage1 } from "../blurImage";
 
 export default function StartView({onStart}) {
 
@@ -14,40 +15,19 @@ export default function StartView({onStart}) {
                     <div>
                         <p>ミッキー</p>
                         <div className={styles.img}>
-                            <Image
-                                src="/game/mickey.png"
-                                alt="ミッキーマウス"
-                                sizes="(min-width: 150px) 150px, 13vw"
-                                width={300}
-                                height={300}
-                                loading="eager"
-                            />
+                            <BlurImage1 src="/game/mickey.png" alt="ミッキーマウス" width="300" height="300" sizes="(min-width: 150px) 150px, 13vw" />
                         </div>
                     </div>
                     <div>
                         <p>ミニー</p>
                         <div className={styles.img}>
-                            <Image
-                                src="/game/minnie.png"
-                                alt="ミニーマウス"
-                                sizes="(min-width: 150px) 150px, 13vw"
-                                width={300}
-                                height={300}
-                                loading="eager"
-                            />
+                            <BlurImage1 src="/game/minnie.png" alt="ミニーマウス" width="300" height="300" sizes="(min-width: 150px) 150px, 13vw" />
                         </div>
                     </div>
                     <div>
                         <p>ピート</p>
                         <div className={styles.img}>
-                            <Image
-                                src="/game/pete.png"
-                                alt="ピート"
-                                sizes="(min-width: 150px) 150px, 13vw"
-                                width={300}
-                                height={300}
-                                loading="eager"
-                            />
+                            <BlurImage1 src="/game/pete.png" alt="ピート" width="300" height="300" sizes="(min-width: 150px) 150px, 13vw" />
                         </div>
                     </div>
                 </div>
@@ -55,27 +35,13 @@ export default function StartView({onStart}) {
                     <div>
                         <p>オウム</p>
                         <div className={styles.img}>
-                            <Image
-                                src="/game/oumu.png"
-                                alt="ピート"
-                                sizes="(min-width: 150px) 150px, 13vw"
-                                width={300}
-                                height={300}
-                                loading="eager"
-                            />
+                            <BlurImage1 src="/game/oumu.png" alt="おうむ" width="300" height="300" sizes="(min-width: 150px) 150px, 13vw" />
                         </div>
                     </div>
                     <div>
                         <p>山羊</p>
                         <div className={styles.img}>
-                            <Image
-                                src="/game/goat.png"
-                                alt="ピート"
-                                sizes="(min-width: 150px) 150px, 13vw"
-                                width={300}
-                                height={300}
-                                loading="eager"
-                            />
+                            <BlurImage1 src="/game/goat.png" alt="山羊" width="300" height="300" sizes="(min-width: 150px) 150px, 13vw" />
                         </div>
                     </div>
                 </div>

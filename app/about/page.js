@@ -22,11 +22,12 @@ export default function About() {
                         </div>
                         <div className={styles.img}>
                             <Image
-                                src="/about/mickey.svg"
+                                src="/about/mickey.png"
                                 alt="ミッキーマウス"
                                 width={187}
                                 height={305}
                                 loading="eager"
+                                priority
                             />
                         </div>
                     </div>

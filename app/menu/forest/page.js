@@ -5,6 +5,7 @@ import Footer from "@/app/_components/Footer";
 import data from '@/app/_components/dataBase'
 import cx from "classnames";
 import styles from "./page.module.css"
+import { BlurImage3, BlurImage4 } from "@/app/_components/blurImage";
 
 export default function Forest() {
 
@@ -18,14 +19,7 @@ export default function Forest() {
                 <section className={styles.topWrapper}>
                     <div className={styles.mainImgContainer}>
                         <div className={styles.mainImg}>
-                            <Image
-                                src="/article/forest/mainImg.webp"
-                                alt="森林破壊"
-                                fill
-                                style={{objectFit: 'cover'}}
-                                sizes="(min-width: 320px) 320px, 40vw"
-                                priority
-                            />
+                            <BlurImage3 src="/article/forest/mainImg.webp" alt="森林破壊" sizes="(min-width: 320px) 320px, 40vw"/>
                         </div>
                     </div>
                     <header>
@@ -59,14 +53,7 @@ export default function Forest() {
                     </div>
                     <div className={styles.middleImgContainer}>
                         <div className={styles.middleImg}>
-                            <Image
-                                src="/article/forest/middle.webp"
-                                alt="オラウータン"
-                                fill
-                                style={{objectFit: 'cover'}}
-                                sizes="(min-width: 576px) 576px, 50vw"
-                                placeholder="blur"
-                            />
+                            <BlurImage4 src="/article/forest/middle.webp" alt="オラウータン" sizes="(min-width: 576px) 576px, 50vw" />
                         </div>
                     </div>
                     <p className={styles.forestMiddleCap1}>左：<br/>生息地をおびやかされるオラウータン</p>

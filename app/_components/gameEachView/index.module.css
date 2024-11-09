@@ -58,19 +58,6 @@
     align-self: flex-end;
     justify-self: center;
 }
-.quest1,
-.quest5 {
-    align-self: center;
-}
-.quest5 {
-    height: auto;
-}
-.quest7 img{
-    width: 90%;
-}
-.quest8 {
-    align-self: flex-start;
-}
 .quiz input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance:none;
@@ -122,5 +109,9 @@
         width: 60%;
         height: auto;
         text-align: center;
+    }
+    .quest2,
+    .quest10 {
+        width: 40%;
     }  
 }

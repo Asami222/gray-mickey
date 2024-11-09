@@ -35,7 +35,7 @@ export default function ResultView({results,onReset}) {
         <div className={styles.results}>
             <div>
                 <Image
-                    src={`/game/${img}.jpg`}
+                    src={`/game/${img}.png`}
                     alt=""
                     width={700}
                     height={700}

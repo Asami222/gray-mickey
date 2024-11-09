@@ -4,6 +4,8 @@ import ArticleText from "@/app/_components/articleText";
 import data from '@/app/_components/dataBase'
 import cx from "classnames";
 import styles from "./page.module.css"
+import { BlurImage2 } from "@/app/_components/blurImage";
+import {bear} from "@/public/article/land/bear.webp"
 
 export default function Land() {
 
@@ -15,15 +17,7 @@ export default function Land() {
             <ArticleText>
                 <section className={styles.flexBasic}>
                     <div className={styles.bear}>
-                        <Image
-                            src="/article/land/bear.webp"
-                            alt="北極熊"
-                            sizes="(min-width: 624px) 624px, 50vw"
-                            width={1248}
-                            height={1100}
-                            placeholder="blur"
-                            priority
-                        />
+                        <BlurImage2 src="/article/land/bear.webp" alt="北極熊" width="1248" height="1100" sizes="(min-width: 624px) 624px, 50vw" />
                     </div>
                     <div className={styles.text}>
                         <h3>世界中の汚染物質が最終的に集まる場所</h3>

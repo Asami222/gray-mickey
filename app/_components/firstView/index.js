@@ -16,11 +16,11 @@ export default function FirstView({count,Go}) {
                 </p>
                 <div className={styles.mickey}>
                     <Image
-                    src="/mickey1.gif"
+                    src="/home/mickeyLow1.gif"
                     alt="Welcome To Gray Mickey Site !"
                     sizes="(max-width: 375px) 252px, 380px"
-                    width={1233}
-                    height={1237}
+                    width={758}
+                    height={760}
                     priority
                     />
                 </div>

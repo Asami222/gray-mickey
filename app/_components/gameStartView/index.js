@@ -18,9 +18,9 @@ export default function StartView({onStart}) {
                                 src="/game/mickey.png"
                                 alt="ミッキーマウス"
                                 sizes="(min-width: 150px) 150px, 13vw"
-                                width={316}
-                                height={316}
-                                priority
+                                width={300}
+                                height={300}
+                                loading="eager"
                             />
                         </div>
                     </div>
@@ -31,8 +31,9 @@ export default function StartView({onStart}) {
                                 src="/game/minnie.png"
                                 alt="ミニーマウス"
                                 sizes="(min-width: 150px) 150px, 13vw"
-                                width={316}
-                                height={316}
+                                width={300}
+                                height={300}
+                                loading="eager"
                             />
                         </div>
                     </div>
@@ -43,8 +44,9 @@ export default function StartView({onStart}) {
                                 src="/game/pete.png"
                                 alt="ピート"
                                 sizes="(min-width: 150px) 150px, 13vw"
-                                width={316}
-                                height={316}
+                                width={300}
+                                height={300}
+                                loading="eager"
                             />
                         </div>
                     </div>
@@ -57,8 +59,9 @@ export default function StartView({onStart}) {
                                 src="/game/oumu.png"
                                 alt="ピート"
                                 sizes="(min-width: 150px) 150px, 13vw"
-                                width={316}
-                                height={316}
+                                width={300}
+                                height={300}
+                                loading="eager"
                             />
                         </div>
                     </div>
@@ -69,8 +72,9 @@ export default function StartView({onStart}) {
                                 src="/game/goat.png"
                                 alt="ピート"
                                 sizes="(min-width: 150px) 150px, 13vw"
-                                width={316}
-                                height={316}
+                                width={300}
+                                height={300}
+                                loading="eager"
                             />
                         </div>
                     </div>

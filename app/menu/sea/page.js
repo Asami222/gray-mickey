@@ -4,6 +4,8 @@ import ArticleText from "@/app/_components/articleText";
 import data from '@/app/_components/dataBase'
 import cx from "classnames";
 import styles from "./page.module.css"
+import { BlurImage2 } from "@/app/_components/blurImage";
+import {turtle} from '@/public/article/sea/turtle.webp'
 
 export default function Sea() {
 
@@ -40,18 +42,11 @@ export default function Sea() {
                     />
                 </div>
                 <div className={styles.turtle}>
-                    <Image
-                        src="/article/sea/turtle.webp"
-                        alt="海亀"
-                        sizes="(min-width: 624px) 624px, 50vw"
-                        width={1248}
-                        height={876}
-                        priority
-                    />
+                    <BlurImage2 src="/article/sea/turtle.webp" alt="海亀" width="1248" height="876" sizes="(min-width: 624px) 624px, 50vw"/>
                 </div>
                 <div className={styles.garbage3}>
                     <Image
-                        src="/article/sea/garbage3.png"
+                        src="/article/sea/pla.webp"
                         alt="買い物袋のゴミ"
                         sizes="(min-width: 210px) 210px, 30vw"
                         width={420}

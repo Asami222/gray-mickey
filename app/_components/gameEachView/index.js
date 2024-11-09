@@ -18,7 +18,7 @@ export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile
         <div className={styles.question}>
             <div className={cx(styles.quest, styles[`quest${id}`])}>
                 <Image
-                    src={`/game/${imgLeft.url}.svg`}
+                    src={`/game/${imgLeft.url}.png`}
                     alt=""
                     width={imgLeft.width}
                     height={imgLeft.height}
@@ -48,7 +48,7 @@ export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile
             </div>
             <div className={cx(styles.quest, styles[`quest${id}`],styles[`quest${id}Right`])}>
                 <Image
-                    src={`/game/${imgRight.url}.svg`}
+                    src={`/game/${imgRight.url}.png`}
                     alt=""
                     width={imgRight.width}
                     height={imgRight.height}
@@ -58,7 +58,7 @@ export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile
             </div>
             <div className={cx(styles.questMobile, styles[`quest${id}`])}>
                     <Image
-                        src={`/game/${imgMobile.url}.svg`}
+                        src={`/game/${imgMobile.url}.png`}
                         alt=""
                         width={imgMobile.width}
                         height={imgMobile.height}

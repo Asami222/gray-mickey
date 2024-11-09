@@ -13,6 +13,8 @@ export default function Story({img,img2,width,height,width2,height2,text,id}) {
                 alt=""
                 width={width}
                 height={height}
+                loading="eager"
+                unoptimized
                 />
             </div>
             <p className={styles.text}>{text}</p>

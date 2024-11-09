@@ -27,7 +27,7 @@
 .wrapper ul {
     display: flex;
     gap: clamp(1.25rem, 0.991rem + 1.1vw, 1.875rem);/*20-30px*/
-    align-items: end;/*個別の高さにする設定*/
+    align-items: flex-end;/*個別の高さにする設定*/
     
 }
 

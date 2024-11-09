@@ -23,6 +23,8 @@ export default function Story({img,img2,width,height,width2,height2,text,id}) {
                 alt=""
                 width={width2}
                 height={height2}
+                loading="eager"
+                unoptimized
                 />
             </div>
             }

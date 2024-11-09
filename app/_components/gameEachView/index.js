@@ -23,7 +23,7 @@ export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile
                     width={imgLeft.width}
                     height={imgLeft.height}
                     style={{width: '100%', height: 'auto',}}
-                    decoding="sync"
+                    loading="eager"
                 />
             </div>
             <div className={cx(styles.box, styles.secondBox)}>
@@ -53,7 +53,7 @@ export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile
                     width={imgRight.width}
                     height={imgRight.height}
                     style={{width: '100%', height: 'auto',}}
-                    decoding="sync"
+                    loading="eager"
                 />
             </div>
             <div className={cx(styles.questMobile, styles[`quest${id}`])}>
@@ -63,7 +63,7 @@ export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile
                         width={imgMobile.width}
                         height={imgMobile.height}
                         style={{width: '100%', height: 'auto',}}
-                        decoding="sync"
+                        loading="eager"
                     />
             </div>
         </div>

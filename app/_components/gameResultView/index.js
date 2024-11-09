@@ -40,7 +40,7 @@ export default function ResultView({results,onReset}) {
                     width={700}
                     height={700}
                     sizes="(max-width: 630px) 70vw, 30vw"
-                    priority
+                    loading="eager"
                     style={{width: '100%',height: 'auto'}}
                 />
             </div>

@@ -37,6 +37,7 @@ export default function SecondView({count}) {
                         sizes="100vw"
                         width={1280}
                         height={130}
+                        style={{width: '100%', height: 'auto'}}
                         />
                     </div>
                 </div>

@@ -46,7 +46,7 @@ export default function Sea() {
                 </div>
                 <div className={styles.garbage3}>
                     <Image
-                        src="/article/sea/pla.webp"
+                        src="/article/sea/garbage3.png"
                         alt="買い物袋のゴミ"
                         sizes="(min-width: 210px) 210px, 30vw"
                         width={420}

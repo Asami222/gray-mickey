@@ -86,15 +86,16 @@
         position: relative;
         z-index: 1;
         margin: 1em 0 0.8em 5%;
+        font-size: clamp(1.125rem, 1.006rem + 0.51vw, 1.25rem);
     }
 
     .topContents h3::before,
     .text h3::before {
         position: absolute;
         content: "";
-        top: -17px;
-        height: 60px;
-        width: 70px;
+        top: -18px;
+        height: 55px;
+        width: 65px;
         border: 4px dashed #FDF6FA;
         border-left: none;
         border-radius: 0 50% 50% 0;
@@ -103,7 +104,7 @@
     }
 
     .topContents h3::before {
-        top: 25px;
+        top: 28px;
         margin-left: -8%;
     }
     
@@ -112,12 +113,17 @@
         display: block;
         z-index: 0;
         width: clamp(5.313rem, 2.075rem + 13.81vw, 13.125rem);
+        top: 1em;
         right: 0;
     }
 
     .middleContents {
         display: block;
         margin: 0 5% 0 0;
+    }
+
+    .middleContents .text {
+        padding-top: 1em;
     }
 
     .girl {

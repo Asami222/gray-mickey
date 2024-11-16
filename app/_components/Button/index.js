@@ -24,8 +24,8 @@ export function ButtonArticle({img,imgHover,title,color = 'initial'}) {
                 <Image
                     src={imgHover}
                     alt={title}
-                    width={70}
-                    height={70}
+                    width={140}
+                    height={140}
                 />
             </div>
             :
@@ -33,8 +33,8 @@ export function ButtonArticle({img,imgHover,title,color = 'initial'}) {
                 <Image
                     src={img}
                     alt={title}
-                    width={70}
-                    height={70}
+                    width={140}
+                    height={140}
                 />
             </div>
             }

@@ -14,6 +14,7 @@ export default function Icon({title,img,width,height,name}) {
                     alt={title}
                     width={width}
                     height={height}
+                    priority
                 />
             </Link>
             <h4>{title}</h4>

@@ -37,7 +37,7 @@ export default function Fashion() {
             <section className={styles.middleContents}>
                     <div className={styles.girl}>
                         <Image
-                            src="/article/fashion/girl.svg"
+                            src="/article/fashion/illust.png"
                             alt="洋服を購入した女性のイラスト"
                             width={209}
                             height={366}

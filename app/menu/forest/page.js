@@ -84,7 +84,7 @@ export default function Forest() {
                         </div>
                         <div className={styles.illust}>
                             <Image
-                            src="/article/forest/illust.svg"
+                            src="/article/forest/illust.png"
                             alt="ヤシの木"
                             width={320}
                             height={414}

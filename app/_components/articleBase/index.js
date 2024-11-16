@@ -37,6 +37,7 @@ export default function ArticleBase({children,id,link,arrow,top,color = 'initial
                                 alt=""
                                 width={510}
                                 height={230}
+                                style={{width: '100%', height: 'auto'}}
                             />
                         </p>
                         }
@@ -55,7 +56,7 @@ export default function ArticleBase({children,id,link,arrow,top,color = 'initial
                         </div>
                         <div className={styles.povertyIllust}>
                             <Image
-                                src="/article/poverty/illust.svg"
+                                src="/article/poverty/illust.png"
                                 alt=""
                                 width={510}
                                 height={230}

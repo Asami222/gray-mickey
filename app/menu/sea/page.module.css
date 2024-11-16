@@ -52,6 +52,7 @@
 
 .illust {
     width: 90%;
+    height: auto;
     grid-column: 2/4;
     grid-row: 1/3;
     justify-self: end;

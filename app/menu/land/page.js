@@ -37,7 +37,7 @@ export default function Land() {
                 <section className={styles.flexBasic}>
                     <div className={styles.illust}>
                         <Image
-                            src="/article/land/illust.svg"
+                            src="/article/land/illust.png"
                             alt="氷の上の生き物のイラスト"
                             width={485}
                             height={544}

@@ -25,6 +25,7 @@
 */
 .img {
     width: clamp(2.5rem, 1.723rem + 3.31vw, 4.375rem);/*40-70px*/
+    height: auto;
 }
 
 .about {

@@ -87,7 +87,7 @@ export default function Sea() {
                 <div className={styles.illust}>
                     <Image
                         className={styles.turtleIllust}
-                        src="/article/sea/illust.svg"
+                        src="/article/sea/illust.png"
                         alt="海亀のイラスト"
                         width={490}
                         height={395}

@@ -37,8 +37,8 @@ const data = {
                 height: 450,
             },
             imgMobile: {
-                url: "entotu2",
-                width: 252,
+                url: "entotu2M",
+                width: 464,
                 height: 490,
             },
         },
@@ -197,8 +197,8 @@ const data = {
                 height: 372,
             },
             imgMobile: {
-                url: "light",
-                width: 222,
+                url: "lightM",
+                width: 372,
                 height: 372,
             },
         },

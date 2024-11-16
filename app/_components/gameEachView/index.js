@@ -63,6 +63,7 @@ export default function EachView({id,question,choices,imgLeft,imgRight,imgMobile
                         width={imgMobile.width}
                         height={imgMobile.height}
                         loading="eager"
+                        style={{width: '60%', height: 'auto'}}
                     />
             </div>
         </div>

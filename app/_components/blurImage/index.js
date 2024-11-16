@@ -1,11 +1,7 @@
-"use client";
 
-import { useState } from 'react';
 import Image from 'next/image';
-import styles from "./index.module.css"
 
-export const BlurImage1 = ({src,alt,width,height}) => {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
+export const BlurImage1 = ({src,alt,width,height,sizes}) => {
 
   return (
     <>
@@ -14,16 +10,15 @@ export const BlurImage1 = ({src,alt,width,height}) => {
         alt={alt}
         width={width}
         height={height}
-        className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-        onLoad={() => setIsImageLoaded(true)}
+        sizes={sizes}
+        priority
       />
     </>
   );
 };
 
 export const BlurImage2 = ({src,alt,width,height,sizes}) => {
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
-  
+
     return (
       <>
         <Image
@@ -32,8 +27,6 @@ export const BlurImage2 = ({src,alt,width,height,sizes}) => {
           width={width}
           height={height}
           sizes={sizes}
-          className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-          onLoad={() => setIsImageLoaded(true)}
           priority
         />
       </>
@@ -41,7 +34,6 @@ export const BlurImage2 = ({src,alt,width,height,sizes}) => {
 };
 
   export const BlurImage3 = ({src,alt,sizes}) => {
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
   
     return (
       <>
@@ -51,8 +43,6 @@ export const BlurImage2 = ({src,alt,width,height,sizes}) => {
           fill
           sizes={sizes}
           style={{objectFit: 'cover'}}
-          className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-          onLoad={() => setIsImageLoaded(true)}
           priority
         />
       </>
@@ -60,7 +50,6 @@ export const BlurImage2 = ({src,alt,width,height,sizes}) => {
 };
 
 export const BlurImage4 = ({src,alt,sizes}) => {
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
   
     return (
       <>
@@ -70,8 +59,6 @@ export const BlurImage4 = ({src,alt,sizes}) => {
           fill
           sizes={sizes}
           style={{objectFit: 'cover'}}
-          className={`${isImageLoaded ? styles.removeBlur : styles.blur}`}
-          onLoad={() => setIsImageLoaded(true)}
         />
       </>
     );

@@ -40,6 +40,7 @@
 
 .mickey div{
     width: clamp(6.375rem, 5.028rem + 5.75vw, 9.625rem);/*102-154px*/
+    height: auto;
     margin: 0 auto 1em;
 }
 

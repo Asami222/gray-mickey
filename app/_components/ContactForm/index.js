@@ -22,10 +22,10 @@ export default function ContactForm() {
     return (
             <form className={styles.form} action={formAction}>
                 <div className={styles.field}>
-                    <label className={styles.label} htmlFor="name">
+                    <label className={styles.label} htmlFor="fullname">
                     お名前またはニックネーム
                     </label>
-                    <input className={styles.textfield} type="text" id="name" name="name" />
+                    <input className={styles.textfield} type="text" id="fullname" name="fullname" />
                 </div>
                 <div className={styles.field}>
                     <label className={styles.label} htmlFor="email">

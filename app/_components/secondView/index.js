@@ -19,10 +19,11 @@ export default function SecondView({count}) {
                             <div className={styles.mickey}>
                                 <div >
                                     <Image
-                                        src="/home/mickey.svg"
+                                        src="/home/mickey.png"
                                         alt=""
-                                        width={154}
-                                        height={154}
+                                        width={308}
+                                        height={308}
+                                        sizes="(min-width: 154px, 27vw"
                                         />
                                 </div>
                                 <p>あなたのANGRYなエピソード、<br/>理不尽な話、社会問題についての意見など募集しています！<br/>是非お話を聞かせてください。</p>

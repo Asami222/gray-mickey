@@ -22,6 +22,7 @@ export default function FirstView({count,Go}) {
                     width={758}
                     height={760}
                     priority
+                    unoptimized
                     />
                 </div>
                 <p>あと<span>{count}</span>秒でスタートします</p>

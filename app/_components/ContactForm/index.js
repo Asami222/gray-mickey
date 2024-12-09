@@ -15,7 +15,7 @@ export default function ContactForm() {
     if (state.status === "success") {
         return (
             <p className={styles.success}>
-                Thank You !<br/>メッセージが送られました。
+                Sorry !<br/>ただいま設置中です。<br />メッセージは送られません。
             </p>
         );
     }

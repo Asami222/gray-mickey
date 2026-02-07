@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import FirstView from "./_components/firstView"
 import SecondView from "./_components/secondView";
-import styles from "./page.module.css";
 
 export default function Home() {
 
@@ -27,7 +26,6 @@ export default function Home() {
 
   return (
       <>
-
         { count > 0 && <FirstView count={count} Go={go}/>}
         { count === 0 && <SecondView count={count} />}
       </>

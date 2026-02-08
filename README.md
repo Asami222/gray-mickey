@@ -62,7 +62,7 @@
 サイトを開くと最初に、簡単なサイトの説明文と10から1までのカウントダウンボタンがある描画になります。その後にフェードアウト、フェードインで自然とスライドアニメーションのあるメインの描画へ移行します。2つの描画は同ページで、stateでコンポーネントを切り替えています。このようなワンクッションを置く目的は、2つ目のコンポーネントのイメージなどの描画が遅延することなく表示されることですが、見ている人に簡単にどのようなサイトであるかということと、自然と世界観に誘導できるような仕組みにしています。
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/1.webp" width="328" style="max-width: 100%;" />
+  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/1.webp" width="500" style="max-width: 100%;" />
 </p>
 <br />
 <h3 align="center">CSSでの細かな調整</h3>
@@ -70,10 +70,10 @@
 サイト制作の中でとても苦労した箇所です。スライドアニメーションや性格診断ゲームのそれぞれのシーンは一つのコンポーネントでまとめています。それをシーンごとにCSS Modules内で細かく調整しています。レスポンシブ対応もしているので、幅が狭くなった時にレイアウトが崩れないかにも配慮し、PCとモバイルでイラストの配置を変えたりなどかなり根気のいる作業でした。位置を同じにしたりなど実装しやすい配置に途中で変更することはせず、元々のデザイン通りに仕上げることができました。
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/2.webp" width="328" style="max-width: 100%;" />
+  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/2.webp" width="500" style="max-width: 100%;" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/3.webp" width="328" style="max-width: 100%;" />
+  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/3.webp" width="500" style="max-width: 100%;" />
 </p>
 <br />
 <h3 align="center">イラスト・GIFアニメーション制作</h3>
@@ -81,7 +81,7 @@
 サイト内のイラストやアニメーション、アイコンはすべてProcreateで制作しています。その後Photoshopで調整をしてサイト内で使用しています。キャラクターはレトロ感を出すために少し荒めの粒子のようなペイントにしています。
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/4.webp" width="328" style="max-width: 100%;" />
+  <img src="https://raw.githubusercontent.com/Asami222/gray-mickey/main/public/git/4.webp" width="500" style="max-width: 100%;" />
 </p>
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
